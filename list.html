@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <input id = 'input' type="text" name="" value="">
+    <button id = 'button' type="button" name="button">push me</button>
+
+  </body>
+
+  <script type="text/javascript">
+
+    let inputBox = (function(){
+      let word = ''
+      console.log($)
+      let input = document.getElementById("input")
+
+      function handleChange(){
+        console.log('hey')
+        word  = input.value
+        console.log(word)
+      }
+
+      function getWord(){
+        return word
+      }
+
+      input.addEventListener('keypress', handleChange)
+
+      return {
+        getWord: getWord
+      }
+
+
+    })()
+
+
+    let ajax = (function(){
+      let button = document.createElement('button')
+      button.innerHTML = 'Ajax'
+      let store = []
+      console.log(store)
+
+      function getData () {
+        $.ajax({
+          url: 'http://swapi.co/api/people/1/'
+        }).done((data)=>{
+          console.log(data)
+          store.push(data)
+
+        })
+        
+
+      }
+      // ajax.getData()
+          return {
+            getData: getData
+          }
+        
+
+      button.addEventListener('click', getData)
+      document.body.appendChild(button)
+
+    })()
+
+    // ajax.getData()
+    let button = (function(){
+      // let list = []
+      // console.log(ajax.getData())
+      function press(){
+        console.log('pressed')
+        // list.push(inputBox.getWord())
+        // list.map((ele)=>{
+        // })
+
+          let li = document.createElement('li')
+          // li.setAttribute('class', 'li')
+
+          function test () {
+            li.setAttribute('class', 'li')
+          }
+
+          li.addEventListener('click', test)  
+          li.innerHTML = inputBox.getWord()
+          document.body.appendChild(li)
+      // console.log(list)
+      // return list 
+      }
+      let button = document.getElementById("button")
+      button.addEventListener('click', press)
+
+
+
+    })()
+
+  </script>
+</html>

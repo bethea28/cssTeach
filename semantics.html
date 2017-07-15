@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <article class="art">
+        <section>
+          <input id = 'one' type="text" >
+          <button id = 'butt' type="button" name="button"> press me</button>
+          <ul id ='list'> </ul>
+
+        </section>
+
+      </article>
+    </main>
+    <script type="text/javascript">
+    let Input = (function(){
+
+
+      let word = ''
+      const input = document.getElementById('one')
+
+
+      function change () {
+        word = input.value
+        console.log(word)
+      }
+
+      function setWord (){
+        // let arg = word
+        return word
+      }
+
+      input.addEventListener("keypress", change)
+
+      return {
+        setWord: setWord
+      }
+
+    })()
+
+
+
+    let Button = (function(){
+      let list = []
+      const button = document.getElementById('butt')
+      const ul = document.getElementById('list')
+
+      function click () {
+
+        list.push(Input.setWord())
+        console.log(list)
+
+        let todo= list.map((ele)=>{
+          let li = document.createElement("li")
+          li.innerHTML = ele
+          ul.appendChild(li)
+
+        })
+        console.log(todo)
+      }
+
+      button.addEventListener("click", click)
+    })()
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,96 @@
+.tabs {
+  position: relative;
+  height: 100px;
+/*  border: solid red 2px;
+*/}
+
+.gmail {
+/*  border: solid blue 2px;
+*/  position: absolute;
+  top: -20px;
+  right: 100px;
+}
+
+.images {
+/*  border: solid blue 2px;
+*/  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+.googleBlock {
+  position: relative;
+/*  border: solid green 2px;
+*/  height: 200px;
+
+}
+.googleImage {
+  position: absolute;
+/*  border: solid pink 2px;
+*/  width: 300px;
+  left: 35%;
+  bottom: 30%;
+  transition: 3s;
+
+}
+.googleImage:hover   {
+  position: absolute;
+/*  border: solid pink 2px;
+*/  width: 300px;
+  left: 35%;
+  bottom: 30%;
+  transform: rotate(1080deg);
+  transition: 3s;
+
+}
+
+.input{
+  position: absolute;
+  border: solid black 2px;
+  display: block;
+  width: 60%;
+  height: 30px;
+  left: 20%;
+
+}
+
+.input:focus {
+  position: absolute;
+  border: solid black 2px;
+  display: block;
+  width: 60%;
+  height: 30px;
+  left: 20%;
+  background-color: yellow; 
+  transition: 5s;
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: gold;
+  }
+
+  .googleImage {
+    position: absolute;
+    width: 300px;
+    left: 15%;
+    bottom: 30%;
+    transition: 3s;
+
+  }
+
+
+  .googleImage:hover   {
+  position: absolute;
+/*  border: solid pink 2px;
+*/  width: 300px;
+  left: 15%;
+  bottom: 30%;
+  transform: rotate(1080deg);
+  transition: 3s;
+
+}
+
+}
