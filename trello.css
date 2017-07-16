@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+}
+
+.top {
+  position: relative;
+  border: solid 2px red;
+  /*height: 50px;*/
+  height:50px;
+  background-color: blue;
+}
+.add {
+  position: absolute;
+  border: solid 2px black;
+  right: 145px;
+  width: 3%;
+  height: 60%;
+  top: 20%;
+  border-radius: 5%;
+
+}
+
+.buttons {
+  background-color: blue;
+}
+
+.bb {
+  position: absolute;
+  border: solid 2px black;
+  right: 2%;
+  width: 3%;
+  height: 60%;
+  top: 20%;
+  border-radius: 5%;
+
+}
+
+.i {
+  position: absolute;
+  border: solid 2px black;
+  right: 108px;
+  width: 3%;
+  height: 60%;
+  top: 20%;
+  border-radius: 5%;
+
+}
+.bell{
+  position: absolute;
+  border: solid 2px black;
+  right: 6%;
+  width: 3%;
+  height: 60%;
+  top: 20%;
+  border-radius: 5%;
+
+}
+
+.logo {
+  position: absolute;
+  width: 15%;
+  left: 45%;
+  margin: auto auto auto auto;
+
+
+}
+
+.topInput1 {
+  position: absolute;
+  border: solid 2px green;
+  width: 160px;
+  height: 60%;
+  top: 20%;
+  left: 5px;
+  }
+
+.topInput2 {
+  position: absolute;
+  border: solid 2px green;
+  width: 160px;
+  height: 48%;
+  left: 172px;
+  top: 20%;
+  border-radius: 5%;
+
+}
