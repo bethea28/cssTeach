@@ -9,6 +9,8 @@ body {
   height:50px;
   background-color: blue;
 }
+
+
 .add {
   position: absolute;
   border: solid 2px black;
@@ -16,7 +18,7 @@ body {
   width: 3%;
   height: 60%;
   top: 20%;
-  border-radius: 5%;
+  border-radius: 5%
 
 }
 
@@ -45,6 +47,8 @@ body {
   border-radius: 5%;
 
 }
+
+
 .bell{
   position: absolute;
   border: solid 2px black;
@@ -53,6 +57,8 @@ body {
   height: 60%;
   top: 20%;
   border-radius: 5%;
+  text-align: left;
+  font-size: 8px;
 
 }
 
